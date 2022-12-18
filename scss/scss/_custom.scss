@@ -1,0 +1,177 @@
+@import "variables";
+
+/// Media Query para controlar el diseño responsivo de contacto para móviles
+@include media-breakpoint-down(md) {
+  .tarjeta-contacto{
+    width: auto !important;
+  }
+}
+
+/// Media Query para controlar el diseño responsivo de contacto para tablets
+@include media-breakpoint-down(lg) {
+  .tarjeta-contacto{
+    width: auto !important;
+  }
+}
+
+/// Media Query para controlar el diseño responsivo de contacto para portátiles
+@include media-breakpoint-down(xl) {
+  .tarjeta-contacto{
+    width: auto !important;
+  }
+}
+
+///Clase que aplica márgenes especialmente a los .container
+.altura-a-b{
+  padding: 100px 0 !important;
+}
+
+///Clase que aplica estilos al logotipo
+.logotipo{
+  width: 150px !important;
+  padding: 10px 0 !important;
+}
+
+///Clase que centra los iconos de las redes sociales
+.iconos-redes-header{
+  width: 20px !important;
+  margin: 10px 5px !important;
+}
+
+///Clase que integra el fondo de pantalla del vídeo de la página principal y le da la posición adecuada
+.banner-video{
+  background-image: url("../images/home/banners/video.jpg") !important;
+  padding: 200px 0 !important;
+  position: relative !important;
+  text-align: center !important;
+}
+
+///Clase que oscurece un poco la imagen de fondo del vídeo para resaltar más lo que hay escrito en ella
+.banner-video:before{
+  content:'';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.6);
+}
+
+///Clase que edita una clase ya existente en bootstrap para mover lo que aparece dentro del carrusel
+.carousel-caption {
+  position: absolute !important;
+  top: 40% !important;
+  bottom: 1.25rem !important;
+  left: 15% !important;
+  padding-top: 1.25rem !important;
+  padding-bottom: 1.25rem !important;
+  color: #fff !important;
+  text-align: left !important;
+}
+
+///Clase que le da posición al botón del centro del vídeo de la página Inicio/Home
+.banner-video .play{
+  width: 80px !important;
+  height: 80px !important;
+  position:relative !important;
+}
+
+
+///Clase que modifica la imagen de la cabecera de la página Somos
+.cabecera-somos{
+  padding: 150px 0 100px 0 !important;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../images/home/banners/bannersomos.jpg") !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  z-index: 1 !important;
+
+}
+///Da un color más claro al texto dentro de la imagen
+.texto-somos{
+  color: $light !important;
+  z-index: 2 !important;
+}
+///Da color blanco a cualquier texto
+.texto-blanco{
+  color: $light !important;
+}
+
+///Clase que modifica la imagen de fondo anterior al footer
+.banner-somos{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../images/somos/somos-equipo.jpg") !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  padding: 200px 0 !important;
+  text-align: center !important;
+}
+
+///Clase que modifica el footer
+footer{
+  background-color: #000000 !important;
+  padding: 100px 0 !important;
+  text-align: center !important;
+}
+
+///Clase que modifica el logo del footer
+footer .logotipo-footer{
+  width: 200px !important;
+  margin-bottom: 20px !important;
+}
+
+///Clase que modifica todas las p del footer
+footer p{
+  color:#ffffff !important;
+}
+
+///Clase que modifica el body de la página
+body{
+  background-image: url(../images/home/banners/fondo-body.jpg);
+  background-color: $secondary !important;
+  font-family: Roboto, sans-sarif !important;
+}
+
+///Clase que pone en negrita todos los títulos a los que se le aplique
+h1, h2, h3, h4, h4, h5, h6{
+  font-weight: bold !important;
+}
+
+
+///Clase que modifica el ancho de la barra de desplazamiento
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+///Clase que modifica la barra de desplazamiento
+::-webkit-scrollbar-track {
+  background: $secondary;
+}
+
+///Clase que modifica el ancho de la barra de desplazamiento
+::-webkit-scrollbar-thumb {
+  background: $black;
+}
+
+///Clase que modifica el ancho de la barra de desplazamiento cuando tenemos el cursor sobre ella
+::-webkit-scrollbar-thumb:hover {
+  background: #4f2d2d;
+}
+
+///Clase que añade una imagen al fondo de la web
+.foto-contacto{
+  background-image: url(../images/home/banners/fondo-body.jpg);
+}
+
+///Estilos para la sección del mapa de contacto
+.map-container-section {
+  overflow: hidden;
+  position: relative;
+  height: 0;
+}
+///Estilos para el mapa de contacto
+.map-container-section iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}

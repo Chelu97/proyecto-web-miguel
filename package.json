@@ -1,0 +1,21 @@
+{
+  "name": "proyecto-miguel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "José Luis Caravaca",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-git": "^2.10.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-util": "^3.0.8",
+    "heatmap.js": "^2.0.5",
+    "sass": "^1.57.0",
+    "sassdoc": "^2.7.4",
+    "vinyl-ftp": "^0.6.1"
+  },
+  "description": ""
+}

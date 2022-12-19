@@ -34,8 +34,8 @@ gulp.task('sassdoc', function () {
 
 
 /** Configuration **/
-var user = 'u164705062.fernandocaravaca.com'
-var password = 'Prueba123'
+var user = ''
+var password = ''
 
 var localFiles = ['./**/*','./sassdoc/**/*','*.ico','*.js','*.html'];
 var remoteFolder = '/public_html/spreadinghope'
